@@ -19,6 +19,7 @@ class gitea::install {
     ensure => 'directory',
     owner  => $gitea::user,
     group  => $gitea::group,
+    mode   => '0700',
   }
 
   $gitea_binary_path = "${gitea::home}/gitea/gitea"
