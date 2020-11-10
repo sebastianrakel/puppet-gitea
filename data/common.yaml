@@ -6,3 +6,7 @@ gitea::group: git
 gitea::database_type: postgresql
 gitea::database_user: gitea
 gitea::database_name: gitea
+gitea::http_protocol: http
+gitea::http_addr: '127.0.0.1'
+gitea::http_port: 3000
+
