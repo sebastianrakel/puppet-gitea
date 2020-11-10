@@ -20,10 +20,16 @@ class gitea::install {
     group  => $gitea::group,
   }
 
-  file { "${gitea::home}/gitea/gitea":
+  $gitea_binary_path = "${gitea::home}/gitea/gitea"
+  file { $gitea_binary_path:
     source => "https://dl.gitea.io/gitea/${gitea::version}/gitea-${gitea::version}-linux-amd64",
     mode   => '0700',
     owner  => $gitea::user,
     group  => $gitea::group,
+  }
+
+  file { "/usr/local/bin/gitea":
+    ensure => 'link',
+    target => $gitea_binary_path,
   }
 }
