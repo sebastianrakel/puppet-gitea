@@ -11,6 +11,7 @@ class gitea::install {
   }
 
   $gitea_dirs = [
+    '/etc/gitea/',
     "${gitea::home}/gitea/",
   ]
 
