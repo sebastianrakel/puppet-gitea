@@ -1,7 +1,8 @@
 ---
 gitea::version: 1.12.5
 gitea::home: /var/lib/gitea
-gitea::user: gitea
-gitea::group: gitea
+gitea::user: git
+gitea::group: git
 gitea::database_type: postgresql
 gitea::database_user: gitea
+gitea::database_name: gitea
