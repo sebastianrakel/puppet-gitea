@@ -25,6 +25,7 @@ class gitea::config {
       'HTTP_ADDR' => $gitea::http_addr,
       'HTTP_PORT' => $gitea::http_port,
       'DOMAIN'    => $gitea::domain,
+      'ROOT_URL'  => $gitea::root_url,
     }
   }
 

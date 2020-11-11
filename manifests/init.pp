@@ -14,6 +14,7 @@ class gitea (
   Enum['http','unix'] $http_protocol,
   String[1] $http_addr,
   Integer $http_port,
+  String[1] $root_url,
 ) {
   contain gitea::install
   contain gitea::database
