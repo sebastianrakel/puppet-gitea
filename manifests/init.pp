@@ -7,7 +7,8 @@ class gitea (
   String[1] $app_name,
   String[1] $domain,
   Enum['dev', 'prod'] $run_mode,
-  Enum['postgresql'] $database_type,
+  Enum['postgresql', 'sqlite'] $database_type,
+  String $database_host,
   String $database_name,
   String $database_user,
   String $database_password,
@@ -20,7 +21,6 @@ class gitea (
   contain gitea::database
   contain gitea::config
   contain gitea::service
-
 
   Class['gitea::install'] -> Class['gitea::database'] -> Class['gitea::config'] ~> Class['gitea::service']
 }

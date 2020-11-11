@@ -8,6 +8,8 @@ class gitea::database {
         require  => Class['postgresql::server'],
       }
     }
+    'sqlite': {
+    }
     default: {
       fail('Unrecognized database type for server.')
     }

@@ -3,6 +3,9 @@ class gitea::config {
     'postgresql': {
       'postgres'
     }
+    'sqlite': {
+      'sqlite3'
+    }
   }
 
   $settings = {
