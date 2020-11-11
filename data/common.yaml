@@ -9,4 +9,8 @@ gitea::database_name: gitea
 gitea::http_protocol: http
 gitea::http_addr: '127.0.0.1'
 gitea::http_port: 3000
+gitea::repository_path: /var/lib/gitea/repositories
+gitea::app_name: 'Gitea'
+gitea::run_mode: 'dev'
+gitea::domain: 'localhost'
 

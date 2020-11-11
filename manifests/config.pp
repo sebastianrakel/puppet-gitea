@@ -6,16 +6,25 @@ class gitea::config {
   }
 
   $settings = {
-    database => {
+    DEFAULT    => {
+      'APP_NAME' => $gitea::app_name,
+      'RUN_USER' => $gitea::user,
+      'RUN_MODE' => $gitea::run_mode,
+    },
+    repository => {
+      'ROOT' => $gitea::repository_path,
+    },
+    database   => {
       'DB_TYPE' => $gitea_db_type,
       'NAME'    => $gitea::database_name,
       'USER'    => $gitea::database_user,
       'PASSWD'  => $gitea::database_password,
     },
-    server   => {
+    server     => {
       'PROTOCOL'  => $gitea::http_protocol,
       'HTTP_ADDR' => $gitea::http_addr,
       'HTTP_PORT' => $gitea::http_port,
+      'DOMAIN'    => $gitea::domain,
     }
   }
 
