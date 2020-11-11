@@ -6,7 +6,7 @@ class gitea::config {
   }
 
   $settings = {
-    DEFAULT    => {
+    'DEFAULT'    => {
       'APP_NAME' => $gitea::app_name,
       'RUN_USER' => $gitea::user,
       'RUN_MODE' => $gitea::run_mode,
