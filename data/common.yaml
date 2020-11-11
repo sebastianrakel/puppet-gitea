@@ -13,4 +13,5 @@ gitea::repository_path: /var/lib/gitea/gitea/data/repositories
 gitea::app_name: 'Gitea'
 gitea::run_mode: 'dev'
 gitea::domain: 'localhost'
+gitea::root_url: '%(PROTOCOL)s://%(DOMAIN)s:%(HTTP_PORT)s/'
 
