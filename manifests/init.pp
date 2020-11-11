@@ -21,4 +21,6 @@ class gitea (
   contain gitea::config
   contain gitea::service
 
+
+  Class['gitea::install'] -> Class['gitea::database'] -> Class['gitea::config'] ~> Class['gitea::service']
 }
