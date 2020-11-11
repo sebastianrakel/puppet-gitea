@@ -19,6 +19,7 @@ class gitea::config {
     },
     database   => {
       'DB_TYPE' => $gitea_db_type,
+      'HOST'    => $gitea::database_host,
       'NAME'    => $gitea::database_name,
       'USER'    => $gitea::database_user,
       'PASSWD'  => $gitea::database_password,
