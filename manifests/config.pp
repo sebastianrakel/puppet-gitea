@@ -30,6 +30,9 @@ class gitea::config {
       'HTTP_PORT' => $gitea::http_port,
       'DOMAIN'    => $gitea::domain,
       'ROOT_URL'  => $gitea::root_url,
+    },
+    service => {
+      'DISABLE_REGISTRATION' => $gitea::disable_registration,
     }
   }
 

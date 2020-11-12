@@ -16,6 +16,7 @@ class gitea (
   String[1] $http_addr,
   Integer $http_port,
   String[1] $root_url,
+  Boolean $disable_registration,
 ) {
   contain gitea::install
   contain gitea::database
