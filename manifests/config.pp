@@ -25,11 +25,13 @@ class gitea::config {
       'PASSWD'  => $gitea::database_password,
     },
     server     => {
-      'PROTOCOL'  => $gitea::http_protocol,
-      'HTTP_ADDR' => $gitea::http_addr,
-      'HTTP_PORT' => $gitea::http_port,
-      'DOMAIN'    => $gitea::domain,
-      'ROOT_URL'  => $gitea::root_url,
+      'PROTOCOL'         => $gitea::http_protocol,
+      'HTTP_ADDR'        => $gitea::http_addr,
+      'HTTP_PORT'        => $gitea::http_port,
+      'DOMAIN'           => $gitea::domain,
+      'ROOT_URL'         => $gitea::root_url,
+      'LFS_START_SERVER' => $gitea::lfs_enabled,
+      'LFS_CONTENT_PATH' => $gitea::lfs_data_path,
     },
     service => {
       'DISABLE_REGISTRATION' => $gitea::disable_registration,

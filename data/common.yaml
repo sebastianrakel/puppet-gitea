@@ -15,4 +15,6 @@ gitea::run_mode: 'dev'
 gitea::domain: 'localhost'
 gitea::root_url: '%(PROTOCOL)s://%(DOMAIN)s:%(HTTP_PORT)s/'
 gitea::disable_registration: false
+gitea::lfs_enabled: false
+gitea::lfs_data_path: /var/lib/gitea/gitea/data/lfs
 
