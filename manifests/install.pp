@@ -23,11 +23,23 @@ class gitea::install {
   }
 
   $gitea_binary_path = "${gitea::home}/gitea/gitea"
+  $tmp_gitea_path = "/tmp/gitea-${gitea::version}"
+  archive { $tmp_gitea_path:
+    source  => "https://dl.gitea.io/gitea/${gitea::version}/gitea-${gitea::version}-linux-amd64",
+    mode    => '0700',
+    owner   => $gitea::user,
+    group   => $gitea::group,
+    creates => $tmp_gitea_path,
+    before  => File[$gitea_binary_path],
+  }
+
   file { $gitea_binary_path:
-    source => "https://dl.gitea.io/gitea/${gitea::version}/gitea-${gitea::version}-linux-amd64",
+    ensure => 'file',
+    source => $tmp_gitea_path,
     mode   => '0700',
     owner  => $gitea::user,
     group  => $gitea::group,
+    before => File['/usr/local/bin/gitea'],
   }
 
   file { "/usr/local/bin/gitea":
