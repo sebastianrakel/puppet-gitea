@@ -6,6 +6,9 @@ class gitea::config {
     'sqlite': {
       'sqlite3'
     }
+    default: {
+      fail('database_type needs to be postgresql or sqlite')
+    }
   }
 
   $settings = {
@@ -38,7 +41,7 @@ class gitea::config {
     },
     security => {
       'DISABLE_GIT_HOOKS' => $gitea::disable_git_hooks,
-    }
+    },
   }
 
   $settings.each | String $section, Hash $pairs | {

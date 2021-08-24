@@ -42,7 +42,7 @@ class gitea::install {
     before => File['/usr/local/bin/gitea'],
   }
 
-  file { "/usr/local/bin/gitea":
+  file { '/usr/local/bin/gitea':
     ensure => 'link',
     target => $gitea_binary_path,
   }
