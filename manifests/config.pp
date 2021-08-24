@@ -35,6 +35,9 @@ class gitea::config {
     },
     service => {
       'DISABLE_REGISTRATION' => $gitea::disable_registration,
+    },
+    security => {
+      'DISABLE_GIT_HOOKS' => $gitea::disable_git_hooks,
     }
   }
 
