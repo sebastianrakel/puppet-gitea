@@ -30,6 +30,7 @@ class gitea::install {
     creates => $tmp_gitea_path,
     extract => false,
     before  => File[$gitea_binary_path],
+    cleanup => false,
   }
 
   file { $gitea_binary_path:
