@@ -1,7 +1,7 @@
 ---
 fixtures:
   repositories:
-    #systemd: https://github.com/voxpupuli/puppet-systemd.git
-      #stdlib: https://github.com/puppetlabs/puppetlabs-stdlib.git
+    stdlib: https://github.com/puppetlabs/puppetlabs-stdlib.git
+    inifile: https://github.com/puppetlabs/puppetlabs-inifile.git
     archive: https://github.com/voxpupuli/puppet-archive.git
-      #concat: https://github.com/puppetlabs/puppetlabs-concat.git
+    systemd: https://github.com/voxpupuli/puppet-systemd.git
