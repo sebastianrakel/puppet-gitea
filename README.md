@@ -1,4 +1,4 @@
-# puppet-wireguard
+# puppet-gitea
 
 [![Build Status](https://github.com/sebastianrakel/puppet-gitea/workflows/CI/badge.svg)](https://github.com/sebastianrakel/puppet-gitea/actions?query=workflow%3ACI)
 [![Release](https://github.com/sebastianrakel/puppet-gitea/actions/workflows/release.yml/badge.svg)](https://github.com/sebastianrakel/puppet-gitea/actions/workflows/release.yml)
