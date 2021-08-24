@@ -1,10 +1,10 @@
 {
   "name": "sebastianrakel-gitea",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Sebastian Rakel",
-  "summary": "",
+  "summary": "manage gitea",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/sebastianrakel/puppet-gitea.git",
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
