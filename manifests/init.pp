@@ -18,6 +18,8 @@ class gitea (
   String[1] $root_url,
   Boolean $disable_registration,
   Boolean $disable_git_hooks,
+  Boolean $lfs_enabled,
+  Stdlib::Absolutepath $lfs_data_path,
 ) {
   contain gitea::install
   contain gitea::database
