@@ -17,6 +17,7 @@ class gitea (
   Integer $http_port,
   String[1] $root_url,
   Boolean $disable_registration,
+  Boolean $disable_git_hooks,
 ) {
   contain gitea::install
   contain gitea::database
