@@ -68,6 +68,10 @@ Contribution is fairly easy:
 
 Or simply open an issue, maybe someone will have a look into it!
 
+## Hacktoberfest
+
+This project is participating at hacktoberfest
+
 ## License and Author
 
 This module was originally written by [Sebastian Rakel](https://github.com/sebastianrakel) and reviewed by my personal puppet guru [Tim Meusel](https://github.com/bastelfreak).
