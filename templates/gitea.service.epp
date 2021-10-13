@@ -18,7 +18,7 @@ Type=simple
 User=<%= $gitea_user %>
 Group=<%= $gitea_group %>
 WorkingDirectory=<%= $gitea_home %>
-ExecStart=/usr/local/bin/gitea web --config /etc/gitea/app.ini
+ExecStart=/usr/local/bin/gitea web --pid /run/gitea.pid --config /etc/gitea/app.ini
 Restart=always
 Environment=USER=<%= $gitea_user %> GITEA_WORK_DIR=<%= $gitea_home %>/gitea/
 
