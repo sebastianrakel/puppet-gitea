@@ -18,4 +18,3 @@ gitea::disable_registration: false
 gitea::lfs_enabled: false
 gitea::lfs_data_path: /var/lib/gitea/gitea/data/lfs
 gitea::disable_git_hooks: true
-
