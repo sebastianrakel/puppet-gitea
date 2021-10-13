@@ -52,9 +52,6 @@ class gitea::config {
         section => $section,
         setting => $key,
         value   => $value,
-        owner   => $gitea::user,
-        group   => $gitea::group,
-        mode    => '0700',
       }
     }
   }

@@ -22,6 +22,13 @@ class gitea::install {
     mode   => '0700',
   }
 
+  file { "/etc/gitea/app.ini":
+    ensure => 'file',
+    owner  => $gitea::user,
+    group  => $gitea::group,
+    mode   => '0600',
+  }
+
   $gitea_binary_path = "${gitea::home}/gitea/gitea"
   $tmp_gitea_path = "/tmp/gitea-${gitea::version}"
   archive { $tmp_gitea_path:
