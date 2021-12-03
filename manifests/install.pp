@@ -38,6 +38,7 @@ class gitea::install {
     extract => false,
     before  => File[$gitea_binary_path],
     cleanup => false,
+    notify  => Class['gitea::service'],
   }
 
   file { $gitea_binary_path:

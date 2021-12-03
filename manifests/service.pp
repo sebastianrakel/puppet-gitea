@@ -8,7 +8,9 @@ class gitea::service {
     }),
   }
   ~> service { 'gitea':
-    ensure => 'running',
-    enable => true,
+    ensure     => 'running',
+    hasrestart => true,
+    hasstatus  => true,
+    enable     => true,
   }
 }
