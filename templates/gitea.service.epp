@@ -14,7 +14,7 @@ Restart=on-failure
 User=<%= $gitea_user %>
 Group=<%= $gitea_group %>
 WorkingDirectory=<%= $gitea_home %>
-ExecStart=/usr/local/bin/gitea web --config /etc/gitea/app.ini --custom-path /var/lib/gitea/gitea/data
+ExecStart=/usr/local/bin/gitea web --config /etc/gitea/app.ini --custom-path <%= $gitea_home %>/gitea/data
 AmbientCapabilities=CAP_NET_BIND_SERVICE
 Environment=USER=<%= $gitea_user %> GITEA_WORK_DIR=<%= $gitea_home %>/gitea/
 
