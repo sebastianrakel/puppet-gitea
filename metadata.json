@@ -5,6 +5,26 @@
   "summary": "manage gitea",
   "license": "Apache-2.0",
   "source": "https://github.com/sebastianrakel/puppet-gitea.git",
+  "project_page": "https://github.com/sebastianrakel/puppet-gitea",
+  "issues_url": "https://github.com/sebastianrakel/puppet-gitea/issues",
+  "dependencies": [
+    {
+      "name": "puppet/archive",
+      "version_requirement": ">= 5.0.0 < 6.0.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 7.1.0 < 8.0.0"
+    },
+    {
+      "name": "puppet/systemd",
+      "version_requirement": ">= 3.0.0 < 4.0.0"
+    },
+    {
+      "name": "puppetlabs/inifile",
+      "version_requirement": ">= 5.1.0 < 6.0.0"
+    }
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
@@ -23,24 +43,6 @@
     {
       "name": "puppet",
       "version_requirement": ">= 6.1.0 < 8.0.0"
-    }
-  ],
-  "dependencies": [
-    {
-      "name": "puppet/archive",
-      "version_requirement": ">= 5.0.0 < 6.0.0"
-    },
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 7.1.0 < 8.0.0"
-    },
-    {
-      "name": "puppet/systemd",
-      "version_requirement": ">= 3.0.0 < 4.0.0"
-    },
-    {
-      "name": "puppetlabs/inifile",
-      "version_requirement": ">= 5.1.0 < 6.0.0"
     }
   ],
   "pdk-version": "1.18.1",
