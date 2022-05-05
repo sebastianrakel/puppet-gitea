@@ -26,18 +26,18 @@ This module installs gitea from upstream binary
 Install a gitea with default settings
 
 ```puppet
-class {'gitlab':
+class {'gitea':
 }
 ```
 
 Install gitea with postgresql backend, needs an installed 
 
 ```puppet
-class {'gitlab':
+class {'gitea':
   database_type     => 'postgresql',
   database_host     => '127.0.0.1:5432',
-  database_name     => 'gitlab',
-  database_user     => 'gitlab',
+  database_name     => 'gitea',
+  database_user     => 'gitea',
   database_password => 'someultrasecretstuff',
 }
 ````
