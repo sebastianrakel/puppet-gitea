@@ -1,6 +1,6 @@
 {
   "name": "sebastianrakel-gitea",
-  "version": "0.3.2-rc0",
+  "version": "0.3.2",
   "author": "Sebastian Rakel",
   "summary": "manage gitea",
   "license": "Apache-2.0",
