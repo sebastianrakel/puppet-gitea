@@ -15,6 +15,7 @@
 # @param database_user user of the database (currently only for postgresql)
 # @param database_password password of the database (currently only for postgresql)
 # @param http_protocol which protocol should be used (unix, http)
+# @param http_port which port should be used for http
 # @param http_addr listen address
 # @param root_url root url of the gitea instance e.g '%(PROTOCOL)s://%(DOMAIN)s:%(HTTP_PORT)s/'
 # @param disable_registration disables registration

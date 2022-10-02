@@ -30,7 +30,7 @@ class {'gitea':
 }
 ```
 
-Install gitea with postgresql backend, needs an installed 
+Install gitea with postgresql backend, needs an installed
 
 ```puppet
 class {'gitea':
@@ -76,4 +76,3 @@ This project is participating at hacktoberfest
 
 This module was originally written by [Sebastian Rakel](https://github.com/sebastianrakel) and reviewed by my personal puppet guru [Tim Meusel](https://github.com/bastelfreak).
 It's licensed with [AGPL version 3](LICENSE).
-
