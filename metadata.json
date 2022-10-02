@@ -1,6 +1,6 @@
 {
   "name": "puppet-gitea",
-  "version": "0.3.0",
+  "version": "0.3.1-rc0",
   "author": "Sebastian Rakel",
   "summary": "manage gitea",
   "license": "Apache-2.0",
