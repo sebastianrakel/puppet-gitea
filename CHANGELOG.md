@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.3.0](https://github.com/sebastianrakel/puppet-gitea/tree/v0.3.0) (2022-10-02)
+
+[Full Changelog](https://github.com/sebastianrakel/puppet-gitea/compare/v0.2.6...v0.3.0)
+
+## [v0.2.6](https://github.com/sebastianrakel/puppet-gitea/tree/v0.2.6) (2022-10-02)
+
+[Full Changelog](https://github.com/sebastianrakel/puppet-gitea/compare/0.2.6...v0.2.6)
+
+**Merged pull requests:**
+
+- Update gemfile to current version from voxpupuli [\#8](https://github.com/sebastianrakel/puppet-gitea/pull/8) ([sebastianrakel](https://github.com/sebastianrakel))
+- Update gitea to version 1.17.2 [\#7](https://github.com/sebastianrakel/puppet-gitea/pull/7) ([sebastianrakel](https://github.com/sebastianrakel))
+- Add first changelog [\#6](https://github.com/sebastianrakel/puppet-gitea/pull/6) ([sebastianrakel](https://github.com/sebastianrakel))
+
 ## [0.2.6](https://github.com/sebastianrakel/puppet-gitea/tree/0.2.6) (2022-05-05)
 
 [Full Changelog](https://github.com/sebastianrakel/puppet-gitea/compare/0.2.5...0.2.6)
