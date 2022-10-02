@@ -22,7 +22,7 @@ class gitea::install {
     mode   => '0700',
   }
 
-  file { "/etc/gitea/app.ini":
+  file { '/etc/gitea/app.ini':
     ensure => 'file',
     owner  => $gitea::user,
     group  => $gitea::group,
