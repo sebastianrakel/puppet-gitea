@@ -1,5 +1,5 @@
 ---
-gitea::version: 1.16.7
+gitea::version: 1.17.2
 gitea::home: /var/lib/gitea
 gitea::user: git
 gitea::group: git
