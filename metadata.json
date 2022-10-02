@@ -1,5 +1,5 @@
 {
-  "name": "puppet-gitea",
+  "name": "sebastianrakel-gitea",
   "version": "0.3.2-rc0",
   "author": "Sebastian Rakel",
   "summary": "manage gitea",
