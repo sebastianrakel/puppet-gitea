@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.3.2](https://github.com/sebastianrakel/puppet-gitea/tree/v0.3.2) (2022-10-02)
+
+[Full Changelog](https://github.com/sebastianrakel/puppet-gitea/compare/v0.3.1...v0.3.2)
+
+**Merged pull requests:**
+
+- Rename in metadata [\#13](https://github.com/sebastianrakel/puppet-gitea/pull/13) ([sebastianrakel](https://github.com/sebastianrakel))
+
 ## [v0.3.1](https://github.com/sebastianrakel/puppet-gitea/tree/v0.3.1) (2022-10-02)
 
 [Full Changelog](https://github.com/sebastianrakel/puppet-gitea/compare/v0.3.0...v0.3.1)
