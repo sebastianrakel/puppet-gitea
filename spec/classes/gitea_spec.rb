@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'gitea' do
@@ -6,7 +8,7 @@ describe 'gitea' do
   end
 
   on_supported_os.each do |os, os_facts|
-    context "on #{os} " do
+    context "on #{os}" do
       let :facts do
         os_facts
       end
