@@ -7,10 +7,10 @@
 ### Classes
 
 * [`gitea`](#gitea): manages gitea installation
-* [`gitea::config`](#giteaconfig)
-* [`gitea::database`](#giteadatabase)
-* [`gitea::install`](#giteainstall)
-* [`gitea::service`](#giteaservice)
+* [`gitea::config`](#gitea--config)
+* [`gitea::database`](#gitea--database)
+* [`gitea::install`](#gitea--install)
+* [`gitea::service`](#gitea--service)
 
 ## Classes
 
@@ -22,167 +22,167 @@ manages gitea installation
 
 The following parameters are available in the `gitea` class:
 
-* [`version`](#version)
-* [`home`](#home)
-* [`user`](#user)
-* [`group`](#group)
-* [`repository_path`](#repository_path)
-* [`app_name`](#app_name)
-* [`domain`](#domain)
-* [`run_mode`](#run_mode)
-* [`database_type`](#database_type)
-* [`database_host`](#database_host)
-* [`database_name`](#database_name)
-* [`database_user`](#database_user)
-* [`database_password`](#database_password)
-* [`http_protocol`](#http_protocol)
-* [`http_addr`](#http_addr)
-* [`root_url`](#root_url)
-* [`disable_registration`](#disable_registration)
-* [`disable_git_hooks`](#disable_git_hooks)
-* [`lfs_enabled`](#lfs_enabled)
-* [`lfs_data_path`](#lfs_data_path)
-* [`http_port`](#http_port)
+* [`version`](#-gitea--version)
+* [`home`](#-gitea--home)
+* [`user`](#-gitea--user)
+* [`group`](#-gitea--group)
+* [`repository_path`](#-gitea--repository_path)
+* [`app_name`](#-gitea--app_name)
+* [`domain`](#-gitea--domain)
+* [`run_mode`](#-gitea--run_mode)
+* [`database_type`](#-gitea--database_type)
+* [`database_host`](#-gitea--database_host)
+* [`database_name`](#-gitea--database_name)
+* [`database_user`](#-gitea--database_user)
+* [`database_password`](#-gitea--database_password)
+* [`http_protocol`](#-gitea--http_protocol)
+* [`http_addr`](#-gitea--http_addr)
+* [`root_url`](#-gitea--root_url)
+* [`disable_registration`](#-gitea--disable_registration)
+* [`disable_git_hooks`](#-gitea--disable_git_hooks)
+* [`lfs_enabled`](#-gitea--lfs_enabled)
+* [`lfs_data_path`](#-gitea--lfs_data_path)
+* [`http_port`](#-gitea--http_port)
 
-##### <a name="version"></a>`version`
+##### <a name="-gitea--version"></a>`version`
 
 Data type: `String[1]`
 
 Gitlab Version to install
 
-##### <a name="home"></a>`home`
+##### <a name="-gitea--home"></a>`home`
 
 Data type: `String[1]`
 
 home path of the gitea user
 
-##### <a name="user"></a>`user`
+##### <a name="-gitea--user"></a>`user`
 
 Data type: `String[1]`
 
 gitea user
 
-##### <a name="group"></a>`group`
+##### <a name="-gitea--group"></a>`group`
 
 Data type: `String[1]`
 
 gitea user group
 
-##### <a name="repository_path"></a>`repository_path`
+##### <a name="-gitea--repository_path"></a>`repository_path`
 
 Data type: `String[1]`
 
 where repository should be stored
 
-##### <a name="app_name"></a>`app_name`
+##### <a name="-gitea--app_name"></a>`app_name`
 
 Data type: `String[1]`
 
 name for your gitea instance
 
-##### <a name="domain"></a>`domain`
+##### <a name="-gitea--domain"></a>`domain`
 
 Data type: `String[1]`
 
 domain where your instance is
 
-##### <a name="run_mode"></a>`run_mode`
+##### <a name="-gitea--run_mode"></a>`run_mode`
 
 Data type: `Enum['dev', 'prod']`
 
 in which mode gitea should be run (dev, prod)
 
-##### <a name="database_type"></a>`database_type`
+##### <a name="-gitea--database_type"></a>`database_type`
 
 Data type: `Enum['postgresql', 'sqlite']`
 
 which database should be configured (postgresql, sqlite)
 
-##### <a name="database_host"></a>`database_host`
+##### <a name="-gitea--database_host"></a>`database_host`
 
 Data type: `String`
 
 host of the database (currently only for postgresql)
 
-##### <a name="database_name"></a>`database_name`
+##### <a name="-gitea--database_name"></a>`database_name`
 
 Data type: `String`
 
 name of the database (currently only for postgresql)
 
-##### <a name="database_user"></a>`database_user`
+##### <a name="-gitea--database_user"></a>`database_user`
 
 Data type: `String`
 
 user of the database (currently only for postgresql)
 
-##### <a name="database_password"></a>`database_password`
+##### <a name="-gitea--database_password"></a>`database_password`
 
 Data type: `String`
 
 password of the database (currently only for postgresql)
 
-##### <a name="http_protocol"></a>`http_protocol`
+##### <a name="-gitea--http_protocol"></a>`http_protocol`
 
 Data type: `Enum['http','unix']`
 
 which protocol should be used (unix, http)
 
-##### <a name="http_addr"></a>`http_addr`
+##### <a name="-gitea--http_addr"></a>`http_addr`
 
 Data type: `String[1]`
 
 listen address
 
-##### <a name="root_url"></a>`root_url`
+##### <a name="-gitea--root_url"></a>`root_url`
 
 Data type: `String[1]`
 
 root url of the gitea instance e.g '%(PROTOCOL)s://%(DOMAIN)s:%(HTTP_PORT)s/'
 
-##### <a name="disable_registration"></a>`disable_registration`
+##### <a name="-gitea--disable_registration"></a>`disable_registration`
 
 Data type: `Boolean`
 
 disables registration
 
-##### <a name="disable_git_hooks"></a>`disable_git_hooks`
+##### <a name="-gitea--disable_git_hooks"></a>`disable_git_hooks`
 
 Data type: `Boolean`
 
 disables git hooks in the webui
 
-##### <a name="lfs_enabled"></a>`lfs_enabled`
+##### <a name="-gitea--lfs_enabled"></a>`lfs_enabled`
 
 Data type: `Boolean`
 
 enables git LFS for repositories
 
-##### <a name="lfs_data_path"></a>`lfs_data_path`
+##### <a name="-gitea--lfs_data_path"></a>`lfs_data_path`
 
 Data type: `Stdlib::Absolutepath`
 
 where should lfs data be stored
 
-##### <a name="http_port"></a>`http_port`
+##### <a name="-gitea--http_port"></a>`http_port`
 
 Data type: `Integer`
 
 
 
-### <a name="giteaconfig"></a>`gitea::config`
+### <a name="gitea--config"></a>`gitea::config`
 
 The gitea::config class.
 
-### <a name="giteadatabase"></a>`gitea::database`
+### <a name="gitea--database"></a>`gitea::database`
 
 The gitea::database class.
 
-### <a name="giteainstall"></a>`gitea::install`
+### <a name="gitea--install"></a>`gitea::install`
 
 The gitea::install class.
 
-### <a name="giteaservice"></a>`gitea::service`
+### <a name="gitea--service"></a>`gitea::service`
 
 The gitea::service class.
 
